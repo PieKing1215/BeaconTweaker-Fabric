@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "me.pieking1215.beacontweaker.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "BeaconBlockEntityAccessor",
+    "MixinBeaconBlockEntity"
+  ],
+  "client": [
+	"client.MixinGameRenderer",
+    "client.MixinBackgroundRenderer",
+    "client.MixinBeaconBlockEntityRenderer"
+  ],
+  "injectors": {
+	"defaultRequire": 1
+  }
+}

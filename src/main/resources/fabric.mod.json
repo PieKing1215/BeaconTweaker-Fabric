@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "beacontweaker",
+  "version": "${version}",
+  "name": "BeaconTweaker",
+  "description": "Adds night vision as an option in beacons and adds 4 more tiers that just expand the range.",
+  "authors": [
+	"PieKing1215"
+  ],
+  "contact": {
+	"homepage": "",
+	"sources": ""
+  },
+  "license": "GPL v3.0",
+  "icon": "assets/beacontweaker/icon.png",
+  "environment": "*",
+  "mixins": [
+	"beacontweaker.mixins.json"
+  ],
+  "depends": {
+	"fabricloader": ">=0.11.0",
+	"fabric": "*",
+	"minecraft": "1.16.5"
+  }
+}
