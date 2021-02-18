@@ -4,11 +4,9 @@
   <a href="https://www.curseforge.com/minecraft/mc-mods/beacontweaker-fabric"><img src="http://cf.way2muchnoise.eu/full_beacontweaker-fabric_downloads(E04E14-555-fff-010101-1C1C1C).svg" alt="Download Count"></a>
 </h1>
 
-### Minecraft Fabric mod that tweaks some things with beacons
-
 ### [Forge Version Here](https://github.com/PieKing1215/BeaconTweaker-Forge)
 
-Minecraft Fabric mod that tweaks some things with beacons:
+### Minecraft Fabric mod that tweaks some things with beacons:
 - Adds night vision as an option to tier 3 (next to strength)
 - Changes the night vision potion effect to have a difference between level 1 and 2
 - Adds a less jarring "time running out" effect for night vision
