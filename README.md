@@ -7,9 +7,6 @@
 ### Minecraft Fabric mod that tweaks some things with beacons
 
 ### [Forge Version Here](https://github.com/PieKing1215/BeaconTweaker-Forge)
-<br>
-
-![](demo/demo.gif)
 
 Minecraft Fabric mod that tweaks some things with beacons:
 - Adds night vision as an option to tier 3 (next to strength)
