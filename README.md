@@ -14,6 +14,8 @@
 - Increases the max size of beacon pyramids from 4 to 8, with the new tiers 5-8 just expanding range
 - Changes the size of the beacon beam (currently hides the transparent part since it behaves badly with shaders)
 
+This mod needs to be on both the server and client to work.
+
 ### [Releases](https://github.com/PieKing1215/BeaconTweaker-Fabric/releases)
 
 ## Usage
