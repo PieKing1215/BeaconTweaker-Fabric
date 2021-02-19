@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "beacontweaker",
   "version": "${version}",
-  "name": "BeaconTweaker",
+  "name": "Beacon Tweaker",
   "description": "Adds night vision as an option in beacons and adds 4 more tiers that just expand the range.",
   "authors": [
 	"PieKing1215"
@@ -20,6 +20,6 @@
   "depends": {
 	"fabricloader": ">=0.11.0",
 	"fabric": "*",
-	"minecraft": "1.16.5"
+    "minecraft": ">=1.15.0"
   }
 }
