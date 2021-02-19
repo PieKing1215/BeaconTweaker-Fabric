@@ -12,7 +12,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class MixinGameRenderer {
 
     @Inject(at = @At("HEAD"), method = "getNightVisionStrength", cancellable = true)
-    private static void getNightVisionStrength(LivingEntity livingEntityIn, float entitylivingbaseIn, CallbackInfoReturnable<Float> callback) {
+    private void getNightVisionStrength(LivingEntity livingEntityIn, float entitylivingbaseIn, CallbackInfoReturnable<Float> callback) {
         // these checks are theoretically not necessary as they are checked before this method is called
         if(livingEntityIn == null || livingEntityIn.getStatusEffect(StatusEffects.NIGHT_VISION) == null) {
             callback.setReturnValue(0.0f);

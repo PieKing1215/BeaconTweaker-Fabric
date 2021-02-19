@@ -10,11 +10,11 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 @Mixin(BackgroundRenderer.class)
 public class MixinBackgroundRenderer {
 
-    @Redirect(method = "render", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/render/GameRenderer;getNightVisionStrength(Lnet/minecraft/entity/LivingEntity;F)F"))
-    private static float getNightVisionStrength(LivingEntity livingEntity, float f){
+    @Redirect(method = "renderBackground", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/render/GameRenderer;getNightVisionStrength(Lnet/minecraft/entity/LivingEntity;F)F"))
+    private  float getNightVisionStrength(GameRenderer gameRenderer, LivingEntity livingEntity, float f){
         // make the fog not get super bright with night vision
         // (this lessens the harsh sky transition on the horizon with night vision)
-        return GameRenderer.getNightVisionStrength(livingEntity, f) * 0.25f;
+        return gameRenderer.getNightVisionStrength(livingEntity, f) * 0.25f;
     }
 
 }

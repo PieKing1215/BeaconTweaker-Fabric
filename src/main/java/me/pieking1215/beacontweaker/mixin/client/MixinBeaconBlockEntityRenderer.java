@@ -10,13 +10,13 @@ public class MixinBeaconBlockEntityRenderer {
 
     // I have the values set like this to basically "disable" the transparent beam since it renders weird with shaders
 
-    @ModifyConstant(method = "render(Lnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/VertexConsumerProvider;FJII[F)V", constant = @Constant(floatValue = 0.2f))
-    private static float modifyOpaqueSize(float original){
-        return 0.25f; // size of opaque beacon beam (0.2f in vanilla)
+    @ModifyConstant(method = "renderBeaconLightBeam(DDDDJII[F)V", constant = @Constant(doubleValue = 0.2D))
+    private static double modifyOpaqueSize(double original){
+        return 0.25D; // size of opaque beacon beam (0.2D in vanilla)
     }
 
-    @ModifyConstant(method = "render(Lnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/VertexConsumerProvider;FJII[F)V", constant = @Constant(floatValue = 0.25f))
-    private static float modifyTranslucentSize(float original){
-        return 0.1f; // size of translucent beacon beam (0.25f in vanilla)
+    @ModifyConstant(method = "renderBeaconLightBeam(DDDDJII[F)V", constant = @Constant(doubleValue = 0.25D))
+    private static double modifyTranslucentSize(double original){
+        return 0.1D; // size of translucent beacon beam (0.25D in vanilla)
     }
 }
